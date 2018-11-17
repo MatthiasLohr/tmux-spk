@@ -7,7 +7,7 @@ dsm6.2:
   before_script:
   script:
     - mkdir -p /synobuild/source
-    - ln -s ./ /synobuild/source/tmux
+    - ln -sf ./ /synobuild/source/tmux
     - cd /synobuild/pkgscripts-ng
     - ./PkgCreate.py -v 6.2 tmux
 
