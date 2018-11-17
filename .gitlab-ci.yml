@@ -2,10 +2,13 @@
 stages:
   - build
 
-6.1-apollolake:
+dsm6.1:
   stage: build
   before_script:
   script:
-    - ./SynoBuildConf/build
-    - ./SynoBuildConf/install
+    - mkdir -p /source
+    - ln -s ./ /synobuild/source/tmux
+    - cd /synobuild/pkgscripts-ng
+    - ./PkgCreate.py -v 6.1 tmux
+
 
