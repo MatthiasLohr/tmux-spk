@@ -2,13 +2,13 @@
 stages:
   - build
 
-dsm6.1:
+dsm6.2:
   stage: build
   before_script:
   script:
     - mkdir -p /synobuild/source
     - ln -s ./ /synobuild/source/tmux
     - cd /synobuild/pkgscripts-ng
-    - ./PkgCreate.py -v 6.1 tmux
+    - ./PkgCreate.py -v 6.2 tmux
 
 
