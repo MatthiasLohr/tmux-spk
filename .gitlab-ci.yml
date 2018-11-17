@@ -6,7 +6,7 @@ dsm6.1:
   stage: build
   before_script:
   script:
-    - mkdir -p /source
+    - mkdir -p /synobuild/source
     - ln -s ./ /synobuild/source/tmux
     - cd /synobuild/pkgscripts-ng
     - ./PkgCreate.py -v 6.1 tmux
